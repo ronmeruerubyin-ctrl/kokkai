@@ -211,6 +211,46 @@
   }
   .toast.show{opacity:1;transform:translateX(-50%) translateY(-6px);}
   footer{text-align:center;font-size:11px;color:rgba(240,236,225,0.5);padding:18px;letter-spacing:0.1em;}
+
+  /* ---- mobile ---- */
+  @media (max-width: 640px){
+    body{padding:0;}
+    .sheet{border-left:none;border-right:none;max-width:none;}
+    header{padding:22px 18px 18px;align-items:flex-start;}
+    .doc-label{font-size:9px;letter-spacing:0.2em;}
+    .subtitle{font-size:12px;}
+    .role-plate{padding:8px 10px;font-size:11px;}
+    main{padding:20px 16px 28px;}
+    section{margin-bottom:26px;}
+    .section-title h2{font-size:16px;}
+
+    .auth-tabs button{padding:13px 8px;font-size:13.5px;}
+    .auth-body{padding:24px 18px 32px;max-width:none;}
+    .id-row{flex-direction:column;gap:0;}
+    .info-box{font-size:12px;padding:12px 14px;}
+
+    .entry-form{padding:14px;}
+    .entry-row{gap:12px;}
+    .entry-row .field{width:100% !important;}
+    .slider-row{grid-template-columns:88px 1fr 52px;gap:8px;font-size:12px;}
+    .slider-row .val-input{width:52px;font-size:12px;padding:5px 4px;}
+
+    .add-party{flex-wrap:wrap;}
+    .add-party input[type=text]{width:100%;}
+    .color-palette{max-width:none;}
+
+    .chart-wrap{padding:12px;}
+    canvas{max-height:260px;}
+    .chart-tabs button{font-size:11px;padding:5px 9px;}
+    .playback{gap:8px;}
+    .scrub-label{min-width:0;font-size:11px;}
+    .speed-select{flex-basis:100%;order:3;}
+
+    table{font-size:11px;}
+    thead th, tbody td{padding:6px 7px;}
+
+    .toast{width:calc(100% - 32px);text-align:center;}
+  }
 </style>
 </head>
 <body>
